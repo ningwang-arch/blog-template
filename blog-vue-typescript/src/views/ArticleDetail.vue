@@ -70,12 +70,12 @@
             </el-form-item>
             <el-row :gutter="20">
               <el-col :span="12">
-                <el-form-item label="名称" required>
+                <el-form-item label="名称">
                   <el-input v-model="state.comment.username" placeholder="" />
                 </el-form-item>
               </el-col>
               <el-col :span="12">
-                <el-form-item label="电子邮件" required>
+                <el-form-item label="电子邮件">
                   <el-input v-model="state.comment.email" placeholder="" />
                 </el-form-item>
               </el-col>
@@ -107,7 +107,7 @@
 import { defineComponent, reactive, onMounted } from "vue";
 import service from "../utils/https";
 import urls from "../utils/urls";
-import { ElMessage } from "element-plus";
+import { ElMessage } from "element-plus/es";
 import { useRoute } from "vue-router";
 import { timestampToTime, isMobileOrPc } from "../utils/utils";
 import markdown from "../utils/markdown";

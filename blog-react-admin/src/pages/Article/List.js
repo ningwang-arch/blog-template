@@ -161,6 +161,7 @@ class TableList extends PureComponent {
               </Fragment>
               <Divider type="vertical" />
               <Fragment>
+                {/* https://ningw778.tk/articleDetail?article_id=1 */}
                 <a href={`${domain}articleDetail?article_id=${record._id}`} target="_blank" rel="noreferrer">
                   详情
                 </a>

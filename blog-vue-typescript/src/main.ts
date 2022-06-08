@@ -23,7 +23,7 @@ import {
     ElTag,
     ElIcon,
     ElCollapseTransition
-} from 'element-plus';
+} from 'element-plus/es';
 
 import 'element-theme-chalk'
 

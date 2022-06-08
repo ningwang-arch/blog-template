@@ -1,5 +1,5 @@
 import axios, { AxiosInstance, AxiosRequestConfig, AxiosResponse } from "axios";
-import { ElMessage } from "element-plus";
+import { ElMessage } from "element-plus/es";
 
 export interface ResponseData {
   code: number;

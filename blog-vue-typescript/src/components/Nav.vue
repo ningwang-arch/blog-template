@@ -123,7 +123,7 @@ import service from "../utils/https";
 import urls from "../utils/urls";
 import { useStore } from "vuex";
 import { useRoute, useRouter } from "vue-router";
-import { ElLoading, ElMessage } from "element-plus";
+import { ElLoading, ElMessage } from "element-plus/es";
 import { key } from "../store";
 import { isMobileOrPc, getQueryStringByName } from "../utils/utils";
 import { UserInfo, NavListItem } from "../types/index";

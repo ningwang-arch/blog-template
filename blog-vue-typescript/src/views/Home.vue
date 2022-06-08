@@ -45,7 +45,7 @@
 
 <script lang="ts">
 import { defineComponent, onMounted } from "vue";
-import { ElMessage } from "element-plus";
+import { ElMessage } from "element-plus/es";
 
 export default defineComponent({
   name: "Home",

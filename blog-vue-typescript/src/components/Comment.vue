@@ -5,7 +5,7 @@
     center
     v-model="state.dialogDodel"
     append-to-body
-    top="-75vh"
+    show-close
     @close="cancel"
   >
         <div class="comment">
@@ -13,18 +13,18 @@
           <div style="font-size: 10px; font-color:#dadada;">
             <span>邮箱地址不会被公开。 必填项已用 * 标注</span>
           </div>
-          <el-form v-model="state.comment" status-icon>
+          <el-form v-model="state" status-icon>
             <el-form-item label="评论">
               <el-input v-model="state.content" type="textarea" />
             </el-form-item>
             <el-row :gutter="20">
               <el-col :span="12">
-                <el-form-item label="名称" required>
+                <el-form-item label="名称">
                   <el-input v-model="state.from.username" placeholder="" />
                 </el-form-item>
               </el-col>
               <el-col :span="12">
-                <el-form-item label="电子邮件" required>
+                <el-form-item label="电子邮件">
                   <el-input v-model="state.from.email" placeholder="" />
                 </el-form-item>
               </el-col>
@@ -38,10 +38,12 @@
 </template>
 
 <script lang="ts">
-import { ElMessage } from "element-plus";
+import { ElMessage } from "element-plus/es";
 import { defineComponent, reactive, watch } from "vue";
 import service from "../utils/https";
 import urls from "../utils/urls";
+
+
 
 export default defineComponent({
   name: "Comment",
@@ -179,10 +181,12 @@ export default defineComponent({
   },
 });
 </script>
-<style lang="less" scoped>
-.el-dialog{
-  margin-top: -30vh;
+<style lang="less">
+.el-dialog {
+  margin: -40% auto 50px;
 }
+
+
 .dialog-footer {
   text-align: right;
 }
